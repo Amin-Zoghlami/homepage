@@ -1,0 +1,19 @@
+a {
+  color: black;
+  text-decoration: none;
+}
+
+i {
+  font-size: 25px;
+}
+
+svg {
+  display: inline;
+  height: 25px;
+  width: 25px;
+}
+
+header,
+footer {
+  display: flex;
+}
