@@ -12,8 +12,12 @@
     />
   </head>
   <body>
+    <div class="trapezoid"></div>
     <header>
-      <img src="nanami.jpg" alt="" />
+      <picture>
+        <source srcset="img/nanami-cropped.jpg" media="(max-width: 600px)" />
+        <img src="img/nanami.jpg" alt="" id="contact" />
+      </picture>
       <section>
         <h1>About Me</h1>
         <p>
@@ -24,99 +28,148 @@
           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
           pariatur
         </p>
+        <div class="icons">
+          <a href=""><i class="devicon-github-original"></i></a>
+          <a href=""><i class="devicon-linkedin-plain"></i></a>
+          <a href=""><i class="devicon-twitter-original"></i></a>
+        </div>
       </section>
     </header>
     <main>
       <h1>My Work</h1>
-      <div class="project">
-        <h2>Project Name</h2>
-        <a href=""><i class="devicon-github-original"></i></a>
-        <a href="">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <title>Open In New</title>
-            <path
-              d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"
-            />
-          </svg>
-        </a>
-        <p>
-          Short description of the project. Just a couple sentences will do.
-        </p>
-      </div>
-      <div class="project">
-        <h2>Project Name</h2>
-        <a href=""><i class="devicon-github-original"></i></a>
-        <a href="">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <title>Open In New</title>
-            <path
-              d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"
-            />
-          </svg>
-        </a>
-        <p>
-          Short description of the project. Just a couple sentences will do.
-        </p>
-      </div>
-      <div class="project">
-        <h2>Project Name</h2>
-        <a href=""><i class="devicon-github-original"></i></a>
-        <a href="">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <title>Open In New</title>
-            <path
-              d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"
-            />
-          </svg>
-        </a>
-        <p>
-          Short description of the project. Just a couple sentences will do.
-        </p>
-      </div>
-      <div class="project">
-        <h2>Project Name</h2>
-        <a href=""><i class="devicon-github-original"></i></a>
-        <a href="">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <title>Open In New</title>
-            <path
-              d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"
-            />
-          </svg>
-        </a>
-        <p>
-          Short description of the project. Just a couple sentences will do.
-        </p>
-      </div>
-      <div class="project">
-        <h2>Project Name</h2>
-        <a href=""><i class="devicon-github-original"></i></a>
-        <a href="">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <title>Open In New</title>
-            <path
-              d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"
-            />
-          </svg>
-        </a>
-        <p>
-          Short description of the project. Just a couple sentences will do.
-        </p>
-      </div>
-      <div class="project">
-        <h2>Project Name</h2>
-        <a href=""><i class="devicon-github-original"></i></a>
-        <a href="">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <title>Open In New</title>
-            <path
-              d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"
-            />
-          </svg>
-        </a>
-        <p>
-          Short description of the project. Just a couple sentences will do.
-        </p>
+      <div class="projects">
+        <div class="project">
+          <div class="screenshot" style="background-color: #38492c">
+            screenshot<br />of project
+          </div>
+          <div class="title">
+            <h2>Project Name</h2>
+            <div class="icons">
+              <a href=""><i class="devicon-github-original"></i></a>
+              <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <title>Open In New</title>
+                  <path
+                    d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <p>
+            Short description of the project. Just a couple sentences will do.
+          </p>
+        </div>
+        <div class="project">
+          <div class="screenshot" style="background-color: #8b865a">
+            screenshot<br />of project
+          </div>
+          <div class="title">
+            <h2>Project Name</h2>
+            <div class="icons">
+              <a href=""><i class="devicon-github-original"></i></a>
+              <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <title>Open In New</title>
+                  <path
+                    d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <p>
+            Short description of the project. Just a couple sentences will do.
+          </p>
+        </div>
+        <div class="project">
+          <div class="screenshot" style="background-color: #345277">
+            screenshot<br />of project
+          </div>
+          <div class="title">
+            <h2>Project Name</h2>
+            <div class="icons">
+              <a href=""><i class="devicon-github-original"></i></a>
+              <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <title>Open In New</title>
+                  <path
+                    d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <p>
+            Short description of the project. Just a couple sentences will do.
+          </p>
+        </div>
+        <div class="project">
+          <div class="screenshot" style="background-color: #38492c">
+            screenshot<br />of project
+          </div>
+          <div class="title">
+            <h2>Project Name</h2>
+            <div class="icons">
+              <a href=""><i class="devicon-github-original"></i></a>
+              <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <title>Open In New</title>
+                  <path
+                    d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <p>
+            Short description of the project. Just a couple sentences will do.
+          </p>
+        </div>
+        <div class="project">
+          <div class="screenshot" style="background-color: #8b865a">
+            screenshot<br />of project
+          </div>
+          <div class="title">
+            <h2>Project Name</h2>
+            <div class="icons">
+              <a href=""><i class="devicon-github-original"></i></a>
+              <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <title>Open In New</title>
+                  <path
+                    d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <p>
+            Short description of the project. Just a couple sentences will do.
+          </p>
+        </div>
+        <div class="project">
+          <div class="screenshot" style="background-color: #345277">
+            screenshot<br />of project
+          </div>
+          <div class="title">
+            <h2>Project Name</h2>
+            <div class="icons">
+              <a href=""><i class="devicon-github-original"></i></a>
+              <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <title>Open In New</title>
+                  <path
+                    d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <p>
+            Short description of the project. Just a couple sentences will do.
+          </p>
+        </div>
       </div>
     </main>
     <footer>
@@ -145,11 +198,19 @@
           </svg>
           email@gmail.com
         </p>
-        <a href=""><i class="devicon-github-original"></i></a>
-        <a href=""><i class="devicon-linkedin-plain"></i></a>
-        <a href=""><i class="devicon-twitter-original"></i></a>
+        <div class="icons">
+          <a href=""><i class="devicon-github-original"></i></a>
+          <a href=""><i class="devicon-linkedin-plain"></i></a>
+          <a href=""><i class="devicon-twitter-original"></i></a>
+        </div>
       </address>
-      <img src="nanami-call.jpg" alt="" />
+      <picture>
+        <source
+          srcset="img/nanami-call-cropped.jpg"
+          media="(max-width: 600px)"
+        />
+        <img src="img/nanami-call.jpg" alt="" id="contact" />
+      </picture>
     </footer>
   </body>
 </html>

@@ -1,3 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --shadow: 0px 0px 16px -1px rgba(0, 0, 0, 0.75);
+}
+
+@font-face {
+  font-family: "jjk";
+  src: url("font/jujustu-kaisen.ttf");
+}
+
+body {
+  background-color: #cec5c3;
+  font-family: "jjk", s;
+  overflow-x: hidden;
+}
+
 a {
   color: black;
   text-decoration: none;
@@ -13,7 +33,117 @@ svg {
   width: 25px;
 }
 
+img#about {
+  width: 350px;
+}
+
+.icons {
+  display: flex;
+  gap: 20px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 20px;
+}
+
 header,
 footer {
   display: flex;
+}
+
+.trapezoid {
+  background-color: #38492c;
+  width: 200%;
+  height: 600px;
+  position: absolute;
+  top: -400px;
+  left: -200px;
+  box-shadow: var(--shadow);
+  transform: rotateZ(-10deg);
+  z-index: -1;
+}
+
+header {
+  margin: 40px 0;
+  justify-content: center;
+}
+
+section {
+  background-color: #cec5c3;
+  box-shadow: var(--shadow);
+  max-width: 600px;
+  padding: 0 50px;
+  margin: 100px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+}
+
+section .icons {
+  align-self: end;
+}
+
+main {
+  margin: 50px;
+}
+
+main h1 {
+  padding-bottom: 25px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 100px;
+  justify-items: center;
+}
+
+.project {
+  box-shadow: var(--shadow);
+}
+
+.title {
+  margin: 50px 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project p {
+  margin: 50px 50px;
+}
+
+.screenshot {
+  font-size: 50px;
+  padding: 45px 15px;
+  text-align: center;
+}
+
+footer {
+  background-color: #38492c;
+  color: #cec5c3;
+  padding: 50px;
+  justify-content: space-between;
+}
+
+footer a {
+  color: #cec5c3;
+}
+
+footer svg {
+  fill: #cec5c3;
+}
+
+address h1,
+address p,
+address div {
+  padding-bottom: 25px;
 }
