@@ -14,7 +14,7 @@
 
 body {
   background-color: #cec5c3;
-  font-family: "jjk", s;
+  font-family: "jjk", sans-serif;
   overflow-x: hidden;
 }
 
@@ -60,27 +60,38 @@ footer {
 }
 
 .trapezoid {
-  background-color: #38492c;
-  width: 200%;
-  height: 600px;
   position: absolute;
-  top: -400px;
-  left: -200px;
-  box-shadow: var(--shadow);
-  transform: rotateZ(-10deg);
+  width: 100%;
+  height: 600px;
+  top: -100px;
   z-index: -1;
+  filter: drop-shadow(0px 0px 16px rgba(0, 0, 0, 0.75));
 }
 
 header {
-  margin: 40px 0;
+  margin: 40px 100px;
   justify-content: center;
+}
+
+figure {
+  position: relative;
+  float: left;
+}
+
+figcaption {
+  color: #cec5c3;
+  font-size: 50px;
+  position: absolute;
+  left: 50%;
+  top: 400px;
+  transform: translateX(-50%);
 }
 
 section {
   background-color: #cec5c3;
   box-shadow: var(--shadow);
   max-width: 600px;
-  padding: 0 50px;
+  padding: 50px 50px;
   margin: 100px 0px;
   display: flex;
   flex-direction: column;
@@ -102,13 +113,14 @@ main h1 {
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  gap: 100px;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 150px;
   justify-items: center;
 }
 
 .project {
   box-shadow: var(--shadow);
+  max-width: 400px;
 }
 
 .title {
@@ -141,9 +153,40 @@ footer a {
 footer svg {
   fill: #cec5c3;
 }
+address {
+  margin-right: 25px;
+}
 
 address h1,
 address p,
 address div {
   padding-bottom: 25px;
+}
+
+@media (max-width: 1200px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main h1 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  footer,
+  address,
+  picture {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  figcaption {
+    top: 350px;
+  }
 }

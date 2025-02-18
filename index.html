@@ -12,12 +12,22 @@
     />
   </head>
   <body>
-    <div class="trapezoid"></div>
+    <svg
+      class="trapezoid"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 100 100"
+      preserveAspectRatio="none"
+    >
+      <polygon fill="#38492c" points="0,0 0,100 100,50 100,0 " />
+    </svg>
     <header>
-      <picture>
-        <source srcset="img/nanami-cropped.jpg" media="(max-width: 600px)" />
-        <img src="img/nanami.jpg" alt="" id="contact" />
-      </picture>
+      <figure>
+        <picture>
+          <source srcset="img/nanami-cropped.jpg" media="(max-width: 600px)" />
+          <img src="img/nanami.jpg" alt="" id="contact" />
+        </picture>
+        <figcaption>Kento Nanami</figcaption>
+      </figure>
       <section>
         <h1>About Me</h1>
         <p>
@@ -179,7 +189,7 @@
           Please get in touch if you think our work could be mutually
           beneficial!
         </p>
-        <p>1234 Random Road<br />Random Town, California 12345</p>
+        <p>2 Dogenzaka, Shibuya-ku<br />Tokyo, 150-0043</p>
         <p>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <title>Phone Number</title>
@@ -196,7 +206,7 @@
               d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6M20 6L12 11L4 6H20M20 18H4V8L12 13L20 8V18Z"
             />
           </svg>
-          email@gmail.com
+          kento.nanami@jjk.com
         </p>
         <div class="icons">
           <a href=""><i class="devicon-github-original"></i></a>
@@ -207,7 +217,7 @@
       <picture>
         <source
           srcset="img/nanami-call-cropped.jpg"
-          media="(max-width: 600px)"
+          media="(max-width: 1200px)"
         />
         <img src="img/nanami-call.jpg" alt="" id="contact" />
       </picture>
