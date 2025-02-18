@@ -69,7 +69,7 @@ footer {
 }
 
 header {
-  margin: 40px 100px;
+  margin: 100px 50px;
   justify-content: center;
 }
 
@@ -104,7 +104,7 @@ section .icons {
 }
 
 main {
-  margin: 50px;
+  margin: 100px;
 }
 
 main h1 {
@@ -177,6 +177,10 @@ address div {
 }
 
 @media (max-width: 600px) {
+  header,
+  main {
+    margin: 25px;
+  }
   footer,
   address,
   picture {
@@ -188,5 +192,8 @@ address div {
 
   figcaption {
     top: 350px;
+  }
+  .projects {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
 }
